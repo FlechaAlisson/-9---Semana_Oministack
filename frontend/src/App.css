@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,body,#root{
+  min-height: 100%; /* pra pegar a tela todo pro background*/
+}
+
+body{
+  background: #000 url('./assets/background.jpg');
+  background-size: cover; /* pra a imagem ficar na tela TODA*/
+  -webkit-font-smoothing: antialiased !important;/*nao sei praq serve*/
+}
+
+body, input, button{
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.container{
+    margin: 80px auto 0; /*vai deixar no meio e com uma distancia de 80 px de cima da tela*/
+    max-width: 450px;
+    width: 100%; /*se ele ficar com menos de 450px ele vai ocupar a tela inteira*/
+    display: flex; /*daqui pra baixo eh pra deixar tudo alinhado e no centro (logo e o form)*/
+    flex-direction: column; 
+    align-items: center;
+}
+
+
+.content{
+  width: 100%;
+  background: #FFF;
+  margin-top: 50px; /*para se distanciar da logo*/
+  border-radius: 4px;
+  padding: 30px;
+}
+
+.content > p{ /*dentro do primeiro paragrafo*/
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.content form{
+  display: flex;
+  flex-direction: column; /*daqui e a linha pra cima sao pra deixar 1 embaixo do outro*/
+}
+
+.content form label{
+  font-size: 14px;
+  color: #444;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.content form input{
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  height: 45px;
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+.content form label span{
+  font-weight: normal;
+  color: #999;
+  font-size: 12px;
+}
+.content  button.btn{
+  border: 0px;
+  border-radius: 2px ;
+  width: 100%;
+  height: 42px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #F05a5b;
+  color: #FFF;
+  cursor: pointer; /*pra quando o mouse ficar em cima, ele virar o negocionho de click*/
+}
+
+.content  button.btn:hover{/*quando o mouse tiver em cima fica assim o butao*/
+  background: #e14f40; 
+}
